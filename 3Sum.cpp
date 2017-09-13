@@ -38,9 +38,9 @@ public:
                 else if (sum > 0) --r;
                 else {
                     ret.push_back(vector<int>{nums[i], nums[l], nums[r]});
-                    while(l+1<r && nums[l] == nums[l+1]) l++;
-                    while(l<r-1 && nums[r] == nums[r-1]) r--;
-                    l++; r--;                    
+                    while(l + 1<r && nums[l] == nums[l + 1]) l++;
+                    while(l < r - 1 && nums[r] == nums[r-1]) r--;
+                    l++; r--;
                 }
             }
         }
